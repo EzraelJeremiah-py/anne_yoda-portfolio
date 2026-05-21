@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+from flask_cors import CORS
+CORS(app)
 
 export default function Home() {
   const [portfolio, setPortfolio] = useState(null);
