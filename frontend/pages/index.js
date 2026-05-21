@@ -38,7 +38,7 @@ export default function Home() {
       }}>
         {/* Skills Card */}
         <div style={{
-          backgroundColor: "#111",
+          backgroundColor: "#C0C0C0",
           color: "gold",
           padding: "1.5rem",
           borderRadius: "8px",
@@ -52,7 +52,7 @@ export default function Home() {
 
         {/* Qualifications Card */}
         <div style={{
-          backgroundColor: "#111",
+          backgroundColor: "#C0C0C0",
           color: "gold",
           padding: "1.5rem",
           borderRadius: "8px",
@@ -66,7 +66,7 @@ export default function Home() {
 
         {/* Projects Card */}
         <div style={{
-          backgroundColor: "#111",
+          backgroundColor: "#C0C0C0",
           color: "gold",
           padding: "1.5rem",
           borderRadius: "8px",
@@ -80,7 +80,7 @@ export default function Home() {
 
         {/* Contact Card */}
         <div style={{
-          backgroundColor: "#111",
+          backgroundColor: "#C0C0C0",
           color: "gold",
           padding: "1.5rem",
           borderRadius: "8px",
