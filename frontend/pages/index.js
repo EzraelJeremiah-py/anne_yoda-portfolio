@@ -159,7 +159,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer style={{ backgroundColor: "#333", color: "gold", textAlign: "center", padding: "1rem" }}>
-        <p>© 2026 Anne Kibonde Portfolio | Built with Next.js & Flask</p>
+        <p>© 2026 Anne Kibonde Portfolio | All rights reserved</p>
       </footer>
     </div>
   );
