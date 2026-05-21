@@ -10,7 +10,7 @@ export default function Home() {
       .catch(err => console.error("Fetch error:", err));
   }, []);
 
-  if (!portfolio) return <p style={{ textAlign: "center", marginTop: "2rem", color: "gold" }}>Loading...</p>;
+  if (!portfolio) return <p style={{ textAlign: "center", marginTop: "2rem", color: "black" }}>Loading..........</p>;
 
   return (
     <div style={{
@@ -21,7 +21,7 @@ export default function Home() {
       flexDirection: "column"
     }}>
       {/* Header */}
-      <header style={{ backgroundColor: "blue", color: "gold", padding: "2rem", textAlign: "center" }}>
+      <header style={{ backgroundColor: "cyan", color: "black", padding: "2rem", textAlign: "center" }}>
         <h1 style={{ margin: 0 }}>{portfolio.name}</h1>
         <h2 style={{ margin: 0, fontWeight: "normal" }}>{portfolio.title}</h2>
       </header>
