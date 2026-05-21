@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div style={{
       fontFamily: "Segoe UI, Arial, sans-serif",
-      backgroundColor: "black",
+      backgroundColor: "white",
       minHeight: "100vh",
       display: "flex",
       flexDirection: "column"
@@ -86,9 +86,9 @@ export default function Home() {
           borderRadius: "8px",
           boxShadow: "0 4px 12px rgba(0,0,0,0.6)"
         }}>
-          <h3 style={{ color: "blue" }}>Contact</h3>
-          <p style={{ color: "blue" }}>Email: {portfolio.contact.email}</p>
-          <p style={{ color: "blue" }}>Phone: {portfolio.contact.phone}</p>
+          <h3 style={{ color: "white" }}>Contact</h3>
+          <p style={{ color: "white" }}>Email: {portfolio.contact.email}</p>
+          <p style={{ color: "white" }}>Phone: {portfolio.contact.phone}</p>
         </div>
       </main>
 
