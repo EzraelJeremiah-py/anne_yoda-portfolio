@@ -21,7 +21,7 @@ export default function Home() {
       flexDirection: "column"
     }}>
       {/* Header */}
-      <header style={{ backgroundColor: "cyan", color: "black", padding: "2rem", textAlign: "center" }}>
+      <header style={{ backgroundColor: "silver", color: "black", padding: "2rem", textAlign: "center" }}>
         <h1 style={{ margin: 0 }}>{portfolio.name}</h1>
         <h2 style={{ margin: 0, fontWeight: "normal" }}>{portfolio.title}</h2>
       </header>
@@ -38,7 +38,7 @@ export default function Home() {
       }}>
         {/* Skills Card */}
         <div style={{
-          backgroundColor: "#C0C0C0",
+          backgroundColor: "#111",
           color: "gold",
           padding: "1.5rem",
           borderRadius: "8px",
@@ -52,7 +52,7 @@ export default function Home() {
 
         {/* Qualifications Card */}
         <div style={{
-          backgroundColor: "#C0C0C0",
+          backgroundColor: "#111",
           color: "gold",
           padding: "1.5rem",
           borderRadius: "8px",
@@ -66,7 +66,7 @@ export default function Home() {
 
         {/* Projects Card */}
         <div style={{
-          backgroundColor: "#C0C0C0",
+          backgroundColor: "#111",
           color: "gold",
           padding: "1.5rem",
           borderRadius: "8px",
@@ -80,7 +80,7 @@ export default function Home() {
 
         {/* Contact Card */}
         <div style={{
-          backgroundColor: "#C0C0C0",
+          backgroundColor: "#111",
           color: "gold",
           padding: "1.5rem",
           borderRadius: "8px",
