@@ -15,13 +15,13 @@ export default function Home() {
   return (
     <div style={{
       fontFamily: "Segoe UI, Arial, sans-serif",
-      backgroundColor: "black",
+      backgroundColor: "grey",
       minHeight: "100vh",
       display: "flex",
       flexDirection: "column"
     }}>
       {/* Header */}
-      <header style={{ backgroundColor: "blue", color: "gold", padding: "2rem", textAlign: "center" }}>
+      <header style={{ backgroundColor: "cyan", color: "gold", padding: "2rem", textAlign: "center" }}>
         <h1 style={{ margin: 0 }}>{portfolio.name}</h1>
         <h2 style={{ margin: 0, fontWeight: "normal" }}>{portfolio.title}</h2>
       </header>
@@ -29,30 +29,30 @@ export default function Home() {
       {/* Main Content */}
       <main style={{ flex: "1", padding: "2rem", maxWidth: "900px", margin: "0 auto", color: "gold" }}>
         <section>
-          <h3 style={{ color: "blue" }}>Skills</h3>
+          <h3 style={{ color: "green" }}>Skills</h3>
           <ul>
             {portfolio.skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
         </section>
 
         <section>
-          <h3 style={{ color: "blue" }}>Qualifications</h3>
+          <h3 style={{ color: "green" }}>Qualifications</h3>
           <ul>
             {portfolio.qualifications.map((q, i) => <li key={i}>{q}</li>)}
           </ul>
         </section>
 
         <section>
-          <h3 style={{ color: "blue" }}>Projects</h3>
+          <h3 style={{ color: "green" }}>Projects</h3>
           <ul>
             {portfolio.projects.map((proj, i) => <li key={i}>{proj}</li>)}
           </ul>
         </section>
 
         <section>
-          <h3 style={{ color: "blue" }}>Contact</h3>
-          <p style={{ color: "blue" }}>Email: {portfolio.contact.email}</p>
-          <p style={{ color: "blue" }}>Phone: {portfolio.contact.phone}</p>
+          <h3 style={{ color: "white" }}>Contact</h3>
+          <p style={{ color: "white" }}>Email: {portfolio.contact.email}</p>
+          <p style={{ color: "white" }}>Phone: {portfolio.contact.phone}</p>
         </section>
       </main>
 
