@@ -1,10 +1,29 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template_string
 
 app = Flask(__name__)
+
 @app.route("/")
 def home():
-    return "Backend is running! Use /api/portfolio to fetch data."
-
+    # Simple HTML page at root
+    return render_template_string("""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Anne Kibonde Portfolio API</title>
+        <style>
+            body { font-family: Arial, sans-serif; padding: 2rem; background: #f9f9f9; }
+            h1 { color: #2c3e50; }
+            p { color: #34495e; }
+            a { color: #2980b9; text-decoration: none; }
+        </style>
+    </head>
+    <body>
+        <h1>Anne Kibonde Portfolio Backend</h1>
+        <p>This backend is live on Render 🚀</p>
+        <p>Use the API endpoint here: <a href="/api/portfolio">/api/portfolio</a></p>
+    </body>
+    </html>
+    """)
 
 @app.route("/api/portfolio")
 def portfolio():
