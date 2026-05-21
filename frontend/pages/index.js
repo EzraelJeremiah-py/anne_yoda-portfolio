@@ -29,21 +29,21 @@ export default function Home() {
       {/* Main Content */}
       <main style={{ flex: "1", padding: "2rem", maxWidth: "900px", margin: "0 auto", color: "gold" }}>
         <section>
-          <h3 style={{ color: "green" }}>Skills</h3>
+          <h3 style={{ color: "blue" }}>Skills</h3>
           <ul>
             {portfolio.skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
         </section>
 
         <section>
-          <h3 style={{ color: "green" }}>Qualifications</h3>
+          <h3 style={{ color: "blue" }}>Qualifications</h3>
           <ul>
             {portfolio.qualifications.map((q, i) => <li key={i}>{q}</li>)}
           </ul>
         </section>
 
         <section>
-          <h3 style={{ color: "green" }}>Projects</h3>
+          <h3 style={{ color: "blue" }}>Projects</h3>
           <ul>
             {portfolio.projects.map((proj, i) => <li key={i}>{proj}</li>)}
           </ul>
