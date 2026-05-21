@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [data, setData] = useState(null);
-import { useEffect, useState } from "react";
-
-export default function Home() {
   const [portfolio, setPortfolio] = useState(null);
 
   useEffect(() => {
@@ -14,22 +10,24 @@ export default function Home() {
       .catch(err => console.error("Fetch error:", err));
   }, []);
 
-  if (!portfolio) return <p>Loading...</p>;
+  if (!portfolio) return <p style={{ textAlign: "center", marginTop: "2rem" }}>Loading...</p>;
 
   return (
     <div style={{
-      fontFamily: "Arial, sans-serif",
+      fontFamily: "Segoe UI, Arial, sans-serif",
       backgroundColor: "#f4f4f4",
       minHeight: "100vh",
       display: "flex",
       flexDirection: "column"
     }}>
-      <header style={{ backgroundColor: "#2c3e50", color: "#fff", padding: "1.5rem", textAlign: "center" }}>
-        <h1>{portfolio.name}</h1>
-        <h2>{portfolio.title}</h2>
+      {/* Header */}
+      <header style={{ backgroundColor: "#2c3e50", color: "#fff", padding: "2rem", textAlign: "center" }}>
+        <h1 style={{ margin: 0 }}>{portfolio.name}</h1>
+        <h2 style={{ margin: 0, fontWeight: "normal" }}>{portfolio.title}</h2>
       </header>
 
-      <main style={{ flex: "1", padding: "2rem", maxWidth: "800px", margin: "0 auto" }}>
+      {/* Main Content */}
+      <main style={{ flex: "1", padding: "2rem", maxWidth: "900px", margin: "0 auto" }}>
         <section>
           <h3>Skills</h3>
           <ul>
@@ -58,21 +56,10 @@ export default function Home() {
         </section>
       </main>
 
+      {/* Footer */}
       <footer style={{ backgroundColor: "#333", color: "#ccc", textAlign: "center", padding: "1rem" }}>
-        <p>© 2026 Anne Kibonde Portfolio | Powered by Vercel & Render</p>
+        <p>© 2026 Anne Kibonde Portfolio | All rights reserved</p>
       </footer>
     </div>
-  );
-}
-
-  useEffect(() => {
-    fetch("https://anne-yoda-portfolio.onrender.com/api/portfolio")
-      .then(res => res.json())
-      .then(json => setData(json))
-      .catch(err => console.error("Fetch error:", err));
-  }, []);
-
-  return (
-    <pre>{JSON.stringify(data, null, 2)}</pre>
   );
 }
