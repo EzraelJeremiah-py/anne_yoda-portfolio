@@ -1,6 +1,10 @@
 from flask import Flask, jsonify
 
 app = Flask(__name__)
+@app.route("/")
+def home():
+    return "Backend is running! Use /api/portfolio to fetch data."
+
 
 @app.route("/api/portfolio")
 def portfolio():
