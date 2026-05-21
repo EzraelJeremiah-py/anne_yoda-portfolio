@@ -44,7 +44,7 @@ export default function Home() {
           borderRadius: "8px",
           boxShadow: "0 4px 12px rgba(0,0,0,0.6)"
         }}>
-          <h3 style={{ color: "blue" }}>Skills</h3>
+          <h3 style={{ color: "cyan" }}>Skills</h3>
           <ul>
             {portfolio.skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
@@ -58,7 +58,7 @@ export default function Home() {
           borderRadius: "8px",
           boxShadow: "0 4px 12px rgba(0,0,0,0.6)"
         }}>
-          <h3 style={{ color: "blue" }}>Qualifications</h3>
+          <h3 style={{ color: "cyan" }}>Qualifications</h3>
           <ul>
             {portfolio.qualifications.map((q, i) => <li key={i}>{q}</li>)}
           </ul>
@@ -72,7 +72,7 @@ export default function Home() {
           borderRadius: "8px",
           boxShadow: "0 4px 12px rgba(0,0,0,0.6)"
         }}>
-          <h3 style={{ color: "blue" }}>Projects</h3>
+          <h3 style={{ color: "cyan" }}>Projects</h3>
           <ul>
             {portfolio.projects.map((proj, i) => <li key={i}>{proj}</li>)}
           </ul>
